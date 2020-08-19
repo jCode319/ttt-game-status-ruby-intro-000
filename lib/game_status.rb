@@ -28,3 +28,8 @@ def full?(board)
     full_board == "X" || full_board == "O"
   end
 end
+
+def draw?(board)
+  !won?(board) && full?(board)
+end
+  
