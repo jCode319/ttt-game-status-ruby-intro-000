@@ -25,6 +25,6 @@ end
 #
 def full?(board)
   board.any? do |full_board|
-    full_board == "" || full_board == " "
+    full_board != "" || full_board != " "
   end
 end
