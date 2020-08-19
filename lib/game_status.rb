@@ -38,11 +38,11 @@ def over?(board)
 end
 
 def winner(board)
-  if won?(board) == "X"
+  if won?(board) == token "X"
     return "X"
-  elsif won?(board) == "O"
+  elsif won?(board) == token "O"
     return "O"
   else
     nil
-  end    
+  end
 end
